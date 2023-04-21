@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<body>
+	<style>
+		body{
+			color: blueviolet;
+			background-color:black
+			;
+		}
+		.p{
+			width:50px;
+			height:50px
+		}
+	</style>
+	<center><h1>Back End project</h1></center>
+
+
+
+<center>
+
+	<form action="{{ url_for('h') }}"  method="post" style="color :palevioletred">
+		Enter_a_text : <input type="text" id="input1" name="inpu1" size="50"><br><br>
+		Expression   : <input type="text" id="input2" name="inpu2" size="50"><br><br>
+	<input type ="submit" value="check"><br><br>
+</form>
+<img src={{url_for("static",filename="h.jpg")}} class="p">
+</center>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body {
+			color:blueviolet;
+			background-color: black;
+
+		}
+
+	</style>
+	<style>
+		.center{
+			text-align:center;
+			list-style-position:inside;
+			color:palevioletred;
+		}
+	</style>
+	<body><center>
+		<h2 style="color : blueviolet">Finding the E-mail ID's from the Text</h2>
+	
+	{% if matches %}
+   <ul class="center">
+	     {% for match in matches %}
+	     <li class="center">{{match}}</li>
+	     {% endfor %} 
+	</ul> 
+     {% else %}
+     <p class="center">Text Doesnot contain E-mail ID's</p>
+     {% endif %}
+
+	
+
+	 <a href="/">HOME</a>
+	 
+	</center></body>
+</html>
